@@ -1,0 +1,196 @@
+:root {
+    --green-color: green;
+    --red-color: rgb(188 4 4);
+    --blue-color: #166684;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eee;
+    color: #575657;
+}
+
+.container{
+    padding: 20px 0;
+}
+
+.content .container {
+    margin: 50px auto;
+}
+.budget-form {
+    padding: 25px;
+    border-radius: 5px;
+    border: 3px solid var(--green-color);
+    margin-bottom: 30px;
+}
+
+.expenses-form {
+    padding: 25px;
+    border-radius: 5px;
+    border: 3px solid var(--red-color);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.budget-form input {
+    border: 1px solid var(--green-color);
+}
+
+.expenses-form input {
+    border: 1px solid var(--red-color);
+}
+
+input:focus {
+    outline: none;
+}
+
+.in-fields button {
+    padding: 10px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.budget-form button {
+    border: 2px solid var(--green-color);
+}
+
+.budget-form button:hover {
+    background-color: var(--green-color);
+    color: #fff;
+}
+
+.expenses-form button {
+    border: 2px solid var(--red-color);
+}
+
+.expenses-form button:hover {
+    background-color: var(--red-color);
+    color: #fff;
+}
+
+.analytics h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.budget,
+.expenses,
+.balance {
+    margin-bottom: 15px;
+    min-width: 200px;
+}
+
+svg {
+    margin-bottom: 20px;
+    color: var(--blue-color)
+}
+
+.budget span {
+    color: var(--green-color);
+}
+
+.expenses span {
+    color: var(--red-color);
+}
+
+
+.content .container span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+.expenses-list div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.expenses-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.expenses-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--red-color);
+}
+
+.actions-list {
+    min-width: 100px;
+    justify-content: flex-start !important;
+}
+
+.actions-div {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid #ccc;
+    margin-top: 3px;
+}
+
+.fa-trash {
+    color: var(--red-color);
+}
+
+.actions-div svg {
+    cursor: pointer;
+}
+
+.invalid {
+    margin: 15px 0;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(255, 0, 0);
+    animation: vibrate 2s infinite;
+    text-align: center;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-10px);
+    }
+}
